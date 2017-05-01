@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<title>Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", Helvetica Neue}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SARAH AND NICK</a>
+
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large">SARAH AND NICK</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">WHO WE ARE</h2>
+    <p class="w3-justify"><div style="text-align: center;">We are two students at the University of North Georgia pursuing
+    a Bachelor of Science in Environmental Spatial Analysis. This website
+  was created for our GISC 4500: Application Development. In this course, we expanded our knowledge on the Python
+  programming language and used it in applications such as Pandas and Django. This website specifically was created
+    using Django application development with the help of our professor/all-knowing-being, Zac Miller.</p>
+  <p class="break">Nick, 24, is to be a senior after this semester and is focusing on Geospatial Technology within his major.
+  After graduation next May, Nick plans to carry on with his real estate endeavors and apply Geographic Information
+    Science to his career. Nick enjoys hiking and camping in spare time, as well as traveling. Fun fact: Nick lived in London
+  for nine months.</p>
+  <p class="break">Sarah, also 24, is to be a senior after this semester as well. She is focusing on Geospatial Technology as well as
+  Earth Systems Engineering. Currently, Sarah holds a position at Georgia Soil Mapping, Inc out of Watkinsville, Georgia
+  doing project and soil report mapping. After graduation, she intends to keep working for Georgia Soil Mapping
+  as she gets her Masters, or potentially Doctorate online. Sarah also enjoys hiking with her dog in her spare time,
+  and anything else involving being outdoors. Fun fact: Sarah is friends with a guy named Nick that lived
+  in London for nine months.</div></p>
+    <div class="w3-row w3-padding-32">
+      <div style="text-align: center;">
+        <p><strong>SARAH</strong></p>
+        <img src="https://s-media-cache-ak0.pinimg.com/avatars/sayyyrah_1346116040_280.jpg">
+      </div>
+      <div style="text-align: center;">
+        <p><strong>NICK</strong></p>
+        <img src="https://sites.google.com/site/mrnicholascaswellumstead/_/rsrc/1455633511322/home/IMG_0671.JPG?height=320&width=213">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <p class="w3-opacity"><i>SARAH</i></p>
+        <i class="fa fa-map-marker" style="width:30px"></i>3820 Mundy Mill Rd, Oakwood, GA 30566<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: (706) 521-9526<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: sgrim5235@ung.edu<br>
+      </div>
+        <div class="w3-col m6 w3-large w3-margin-bottom">
+        <p class="w3-opacity"><i>NICK</i></p>
+        <i class="fa fa-map-marker" style="width:30px"></i>3820 Mundy Mill Rd, Oakwood, GA 30566<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: (770) 862-8176<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: ncumst3020@ung.edu<br>
+      </div>
+
+    </div>
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="w3-row">HER</i>
+  <a href="https://www.linkedin.com/in/sarah-grimsley5235/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <i class="w3-row">HIM</i>
+  <a href="https://www.linkedin.com/in/nicholas-umstead-bb4540b6"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+</footer>
+
+<script>
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+
